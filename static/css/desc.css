@@ -1,0 +1,127 @@
+
+.section-title h2 {
+    font-size: 245%;
+}
+#image,#images
+    {
+    margin-left: 24%;
+height: 75vh;
+}
+
+.preview {
+width: 14%;
+margin-left: 43%;
+border: 3px solid black;
+height: 11vh;
+margin-right: 8%;
+}
+.preview2 {
+margin-left:2%;
+}
+.fea
+{
+margin-top: -15%;
+margin-left: 15%;
+font-size: 197%;
+}
+.feat
+{
+margin-left: 17%;
+font-size: 144%;
+list-style: circle;
+}
+.feat li
+{
+    margin-bottom: 2%;
+}
+.continer {
+    margin-top: 6%;
+    margin-left: 21%;
+    margin-right: 20%;
+    padding: 3%;
+    box-shadow: 4px 4px 18px #e2e4e8;
+    padding-top: 1%;
+padding-bottom: 2%;
+margin-bottom:2%;
+}
+
+
+input[type=text], input[type=password], input[type=email] , input[type=tel] .form-select{
+  width: 100%;
+  padding: 2%;
+  margin: 5px 0 22px 0;
+	box-shadow:none;
+  border: none;
+  background: #f2f2ef;
+ 
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    box-shadow: none;
+}
+
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.orderbtn {
+     background-color: #992626;
+    color: white;
+    margin-left: 39%;
+    border: none;
+    height: 7vh;
+    width: 19%;
+    opacity: 0.9;
+    font-size: 152%;
+    padding-top: 1%;
+}
+
+
+.orderbtn:hover {
+  background: #fff;
+color: #9b2626;
+box-shadow: 1px 2px 5px #000;
+}
+label
+{
+margin-bottom:1%;
+margin-left: 1%;
+}
+#spl
+{
+width:15%;
+}
+select
+{
+margin-bottom:2%;
+}
+#img
+{
+margin-left: 28%;
+margin-top: 6%;
+}
+#new label
+{
+width:200%;
+}
+@media only screen and (max-width:1000px)
+{
+	.orderbtn
+	{
+	font-size: 133%;
+	width:32%;
+	}
+	#spl
+	{
+		width:21%;
+		}
+}
+p
+{
+    margin-left: 76%;
+    margin-top: -4%;
+}

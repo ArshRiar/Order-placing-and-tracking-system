@@ -1,0 +1,108 @@
+.form-signin {
+    border: 5px #e2e4e8 solid;
+   margin-top: 6%;
+   margin-left: 27%;
+   margin-right: 25%;
+   padding: 3%;
+   background:#ccc;
+   box-shadow: 4px 4px 18px #e2e4e8;
+   padding-top: 1%;
+padding-bottom: 2%;
+margin-bottom:2%;
+}
+
+/* Full-width input fields */
+input[type=password], input[type=email]{
+ width: 100%;
+ padding: 2%;
+ margin: 5px 0 22px 0;
+   box-shadow:none;
+ border: none;
+
+}
+
+input[type=password]:focus {
+    background-color: #ddd;
+   border: 2px #000 solid;
+   box-shadow: none; 
+}
+
+/* Overwrite default styles of hr */
+hr {
+ border: 1px solid #f1f1f1;
+ margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.loginbtn {
+    background-color: #992626;
+   color: white;
+   margin-left: 39%;
+   border: none;
+   height: 5vh;
+   width: 19%;
+   opacity: 0.9;
+   font-size: 152%;
+   padding-top: 1%;
+}
+
+
+.loginbtn:hover {
+ background: #fff;
+color: #9b2626;
+box-shadow: 1px 2px 5px #000;
+}
+
+/* Add a blue text color to links */
+a {
+ color: dodgerblue;
+}
+
+
+/* Set a grey background color  */
+.container-fluid {
+   height: 3.9em;
+   padding-top:0.3%;
+   color:#ccc;
+   }
+#name
+{
+font-size:199%;
+}
+#products, #register, #login
+{
+font-size: 171%;
+
+}
+.footer h4
+{
+font-size:151%;
+}
+.footer p, .footer a, .third li
+{
+font-size: 105%;
+}
+h1
+{
+text-align: center;
+color: #9b2525;
+font-variant: small-caps;
+}
+.top
+{margin: 0 0 10px;
+text-align: center;
+font-size: 142%;
+font-variant: small-caps;
+letter-spacing: 0.5px;
+color: #974d2a;
+}
+label
+{
+font-weight:600;
+margin-left:1%;
+}
+#alert strong
+{padding-left: 1%;
+font-size: 63%;
+font-variant:none;
+}

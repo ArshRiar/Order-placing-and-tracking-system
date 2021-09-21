@@ -1,0 +1,17 @@
+{% extends 'base_1.html' %}
+{% block title %} Profile {% endblock title%}
+{%block stylesheet%}
+<link rel='stylesheet' href='../static/css/profile.css'>
+{% endblock stylesheet%}
+{% block body%}
+<div class="profile-info">
+    <h1>{{ name }}'s Profile</h1>
+    <hr>
+    <p class="label">Name : <span class="data">{{name}}</span> </p>
+    <p class="label">Name of Organization : <span class="data">{{organization}}</span></p>
+    <p class="label">Organization Address : <span class="data">{{address}}</span></p>
+    <p class="label">Contact Number : <span class="data">{{contact}}</span></p>
+    <p class="label">E-mail : <span class="data">{{email}}</span></p>
+    <p class="label">GST Number : <span class="data">{{gst}}</span></p>
+</div>
+{% endblock body%}

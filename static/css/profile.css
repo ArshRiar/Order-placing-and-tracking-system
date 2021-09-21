@@ -1,0 +1,43 @@
+.profile-info {
+   border: 5px #e2e4e8 solid;
+   margin-top: 6%;
+   margin-left: 27%;
+   margin-right: 25%;
+   padding: 3%;
+   background:#ccc;
+   box-shadow: 4px 4px 18px #ccc ;
+   padding-top: 1%;
+   padding-bottom: 2%;
+   margin-bottom:2%;
+}
+
+h1
+{
+text-align: center;
+color: #9b2525;
+font-variant: small-caps;
+}
+/* Full-width input fields */
+.label{
+ width: 100%;
+ padding: 2%;
+ margin: 5px 0 22px 0;
+ box-shadow:none;
+ border: none;
+ font-size:130%;
+ color: #974d2a;
+
+}
+
+.data {
+   border:none;
+   box-shadow: none; 
+   font-size:130%;
+   color:#000;
+}
+
+/* Overwrite default styles of hr */
+hr {
+ border: 1px solid #d1b2b271;
+ margin-bottom: 25px;
+}

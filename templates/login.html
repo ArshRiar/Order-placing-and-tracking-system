@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock title%}
+{%block stylesheet%}
+<link rel='stylesheet' href='../static/css/login.css'>
+{% endblock stylesheet%}
+{% block body%}
+<div class="form-signin">
+  <form method="POST" action="/login">
+  {% csrf_token %}
+    <h1 style="text-align:center">Please LogIn</h1>
+    <hr>
+    <label for="email">E-mail</label>
+    <input type="email" placeholder="Enter E-mail" name="email" id="email" required>
+    <label for="pswd">Password</label>
+    <input type="password" placeholder="Enter Password" name="pswd" id="pswd" required>  
+    <hr>
+    <button class="loginbtn" type="submit">LogIn</button>
+  </form>
+  <br>
+  <div class="container signin">
+    <p>Donot have an account? <a href="register">Register</a></p>
+  </div>
+</div>
+{% endblock body%}

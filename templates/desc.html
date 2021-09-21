@@ -1,0 +1,156 @@
+{% extends 'base_1.html' %}
+{% block title %} {%endblock%}
+{% block stylesheet %}  
+ <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  
+  <!-- Template  CSS File-->
+  <link href="../static/css/products.css" rel="stylesheet">
+    <link rel='stylesheet' href='../static/css/desc.css'>
+{% endblock stylesheet %}
+{% block body %}
+ <div class="section-title">
+          <h2>{% block heading %} {% endblock heading %}</h2>
+        </div>
+<div class="row odd" data-aos="fade-up">
+          <div class="col-md-5">
+          
+{% block image %}
+{% endblock image %}
+          </div>
+          <div class="col-md-7 pt-4" id='one'>
+            <h3 class='fea'>Key Features</h3>
+            <ul class='feat'>
+             {% block features %}
+             {% endblock features %}
+            </ul>
+          </div>
+        </div>
+        <p>* Orders will be customized as per requirements</p>
+        <form action=""  method="post" >
+  {% csrf_token %}
+  <div class="continer">
+    <div class="section-title">
+          <h2>Place Order</h2>
+        </div>
+
+    <label for="name"> Order Name</label>
+    <input type="text" placeholder=" Order Name " name="name" id="nme" required><br>
+   
+	    <label for="material"> Material </label><br>
+	    <div class='cb'>
+	<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="bopp" id="flexCheckDefault" name='mat[]'>
+  <label class="form-check-label" for="flexCheckDefault">
+   BOPP
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="pp" id="flexCheckDefault"  name='mat[]'>
+  <label class="form-check-label" for="flexCheckDefault">
+    PP
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="ld" id="flexCheckDefault" name='mat[]'>
+  <label class="form-check-label" for="flexCheckDefault">
+    LD
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="hm" id="flexCheckDefault"  name='mat[]'>
+  <label class="form-check-label" for="flexCheckDefault">
+    HM
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="sld" id="flexCheckDefault" name='mat[]'>
+  <label class="form-check-label" for="flexCheckDefault">
+   SLD
+  </label>
+</div><br><p class='extra' style="margin:1%;"></p>
+<div class="form-check form-check-inline" id='spl'>
+  <input class="form-check-input" type="checkbox" value="front laminate" id="flexCheckDefault" name='mat[]' >
+  <label class="form-check-label" for="flexCheckDefault">
+    Front Laminate
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="laminate" id="flexCheckDefault" name='mat[]'>
+  <label class="form-check-label" for="flexCheckDefault">
+    Laminate
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="2-layer" id="flexCheckDefault" name='mat[]' >
+  <label class="form-check-label" for="flexCheckDefault">
+    2-Layer
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="3-layer" id="flexCheckDefault" name='mat[]'>
+  <label class="form-check-label" for="flexCheckDefault">
+    3-Layer
+  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" value="pouch/film" id="flexCheckDefault" name='mat[]' >
+  <label class="form-check-label" for="flexCheckDefault">
+    Pouch/Film
+  </label>
+</div>
+</div>
+<br>
+    <label for="size"  >Size</label>
+    <select class="form-select" aria-label="Default select example" name='dem'>
+  <option selected>Open this select menu</option>
+  <option value='inch'>Inch</option>qty
+  <option value='mm'>mm</option>
+</select>
+    <input type="text" placeholder=" Enter Size" name="size" id="size" required>
+        
+    <label for="qty">Quantity</label>
+    <input type="text" placeholder=" Enter quantity required" name="qty" id="qty" required>
+    
+     <label for="sp">Specifications</label>
+    <select id='design' class="form-select" aria-label="Default select example" onchange='show()' name='sp'>
+  <option selected>Open this select menu</option>
+  <option value='plain'>Plain</option>
+  <option value='print'>Print</option>
+</select>
+<div id='print' style="display:none;">
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="Yes" id="flexCheckDefault" name='design'>
+  <label class="form-check-label" for="flexCheckDefault">
+    Do you have a Design?
+  </label>
+</div>
+<label for="prt" style="margin-right:1%;">Type of Printing: </label>
+ <div class="form-check form-check-inline" id='new'>
+  <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="Flexo" >
+  <label class="form-check-label" for="inlineRadio1">Flexo Printing </label>
+</div>
+<div class="form-check form-check-inline" id='new'>
+  <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="Gravier" >
+  <label class="form-check-label" for="inlineRadio2">Gravier Printing</label>
+</div>
+</div>
+    <label for="tape">Tapping</label>
+<select class="form-select" aria-label="Default select example" name='tape'>
+  <option selected>Open this select menu</option>
+  <option value='flap'>Flap</option>
+  <option value='flaptape'>Flap tape</option>
+  <option value="w/o tape">Without Tape</option>
+    <option value="side blade">Side blade</option>
+</select>
+    <button type="submit" class="orderbtn">Place Order</button>
+  </div>
+</form>
+  <script src="../static/js/aos.js"></script>
+  <script src="../static/js/glightbox.min.js"></script>
+  <script src="../static/js/swiper-bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../static/js/products.js"></script>
+  <script src="../static/js/desc.js"></script>
+{% endblock body %}

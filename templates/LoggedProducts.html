@@ -1,0 +1,113 @@
+{% extends 'base_1.html' %}
+{% block title %}
+Products
+{% endblock title %}
+{% block stylesheet %}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="../static/css/aos.css" rel="stylesheet">
+ <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+ <link href="../static/css/bootstrap-icons.css" rel="stylesheet">
+  <!-- Template  CSS File -->
+  <link href="../static/css/products.css" rel="stylesheet">
+{% endblock stylesheet %}
+{% block body %}
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Products Range</h2>
+        </div>
+        <div class="row odd" data-aos="fade-up">
+          <div class="col-md-5">
+           <!--<img src="../static/img/features-1.svg" class="img-fluid" alt="">-->
+          <div id = "image">	</div>
+	<img class = "preview" alt = "" src = "../static/img/01.jpg" onmouseover = "upDate(this)"  >
+	<img class = "preview" alt = "" src = "../static/img/02.jpg" onmouseover= "upDate(this)">
+          </div>
+          <div class="col-md-7 pt-4" id='one'>
+            <a href="{{1}}" ><h3><strong>Akash Polyproplene Flexo Printing Monolayer Film</strong></h3></a>
+            <ul>
+              <li> Size : 10" x 16"</li>
+              <li>Side Seal Bag</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row even" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="../static/img/03.jpg"  alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <a href='{{2}}' ><h3><strong>Polar Bear Blanket Bag Front Sheet</strong></h3></a>
+            <ul>
+              <li> Size : 24" x 18"</li>
+              <li>90 Micron Multi Layer Milky Film</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row odd" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="../static/img/04.jpg" alt="">
+          </div>
+          <div class="col-md-7 pt-5">
+            <a href='{{3}}' ><h3><strong>2-Layer Darshan Chips Center Seal Pouch</strong></h3></a>
+            <ul>
+              <li> Size: 9" x 11" </li>
+              <li> 7 color printing</li>
+              <li> Raw Material: 2 Micron Polyester, 40 Micron Multi-Layer Polyproplene</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row even" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+           <div id = "images">	</div>
+	<img class = "preview" alt = "" src = "../static/img/05.jpg" onmouseover = "upDates(this)"  >
+	<img class = "preview" alt = "" src = "../static/img/06.jpg" onmouseover= "upDates(this)">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <a href='{{4}}' ><h3><strong>3-Layer Darshan Tikha Mitha Window Metalised Center Seal Pouch</strong></h3></a>
+			 <ul>
+              <li> Size: 180 mm x 130 mm </li>
+              <li> 12 Micron Window Metalised Polyester</li>
+              <li> Raw Material: 12 Micron PET(Polyester), 30 Micron  Cast Polyproplene Film(CPP)</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="row odd" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="../static/img/07.png" class="img-fluid" alt="" style='height:55vh'>
+          </div>
+          <div class="col-md-7 pt-4">
+          <a href='{{5}}' ><h3><strong>3 Side Seal Standy Zipper Pouch</strong></h3></a>
+            <ul>
+              <li> 60 micron Opaque Material</li>
+              <li> Size: 160cm x 200cm</li>
+            </ul>
+          </div>
+        </div>
+         <div class="row even" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="../static/img/08.png" class="img-fluid" alt="" >
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+          <a href='{{6}}' ><h3><strong>Zipper Pouch</strong></h3></a>
+            <ul>
+              <li> 60 micron multilayer natural polyfilm</li>
+              <li> Food Grade Material</li>
+              <li> Available Sizes:  7" x 10" and 6.5" x 10"</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </section><!-- End Features Section -->
+  <!-- Vendor JS Files -->
+  <script src="../static/js/aos.js"></script>
+  <script src="../static/js/glightbox.min.js"></script>
+  <script src="../static/js/swiper-bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../static/js/products.js"></script>
+    <script src="../static/js/desc.js"></script>
+
+  {% endblock body %}

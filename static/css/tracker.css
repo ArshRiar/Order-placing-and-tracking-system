@@ -1,0 +1,100 @@
+h2
+{
+text-align: center;
+margin: 4%;
+font-size: 227%;
+}
+label
+{
+font-size: 124%;
+margin-left: 18%;
+}
+input[type=text]
+{
+width: 20%;
+position: relative;
+left: 27%;
+top: -51%;
+}
+.btn 
+{
+margin-left: 51%;
+margin-top: -10.4%;
+background-color: brown;
+}
+.btn:hover, .btn:focus
+{
+background: #fff;
+color: brown;
+}
+h3
+{
+    margin-left: 11%;
+    margin-top: -4%;
+}
+footer
+{
+	margin-top: 17%;
+}
+.empty
+{   position: absolute;
+top: 43%;
+left: 36%;
+font-size: 300%;
+color: #bfbfbf;
+}
+table
+{
+
+margin: 2%;
+margin-left: 11%;
+width: 74%;
+color: #790000;
+}
+td,th
+{
+padding:1%;
+padding-left: 3%;
+}
+
+tr
+{    border: 1px solid #b3b1b1;
+    font-size: 127%;
+    }
+button[type=button]
+{
+
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    background: none;
+    border: 0;
+    font-size: 140%;
+    }
+    #alert
+    {
+    background: antiquewhite;
+    }
+@media only screen and (max-width:1000px)
+{
+	 label
+    {
+        margin-left: 13%;
+    }
+    .btn{
+        margin-top: -20.4%;
+    }
+    .empty{
+        top: 39%;
+        left: 30%;
+    }
+    footer{
+        margin-top: 37%;
+    }
+     table
+    {
+        margin-left: 7%;
+        width: 87%
+    }
+}
+

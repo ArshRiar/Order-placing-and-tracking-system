@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+}
+
+a {
+	color:#000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: brown;
+text-shadow: 2px 2px #d05e5e45;
+transition: 0.2s;
+}
+a:focus
+{
+color:#000;
+text-decoration:none;
+}
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: "Roboto", sans-serif;
+  padding:4%;
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f3f8fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 365%;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #a62828;
+  bottom: 0;
+  left: calc(50% - 20px);
+  border-radius: 35%;
+}
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .row + .row {
+  margin-top: 100px;
+}
+
+.features h3 {
+  font-weight: 400;
+  font-size: 269%;
+text-align: center;
+}
+
+.features ul {
+  font-size: 213%;
+font-weight: 420;
+padding-left: 21%;
+padding-top: 3%;
+list-style: circle;
+
+}
+
+.features ul li {
+  padding-bottom: 10px;
+}
+
+.features ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #68A4C4;
+}
+
+.features p:last-child {
+padding-bottom: 6%;
+}
+.features .odd
+{
+    position: relative;
+    top: 31%;
+}
+.features .even
+{
+    position: relative;
+    top: 31%;
+}
+.features p
+{font-size: 141%;
+font-weight:400;
+padding-bottom:3%;
+}
+#image,#images{
+		width: 86%;
+	    height: 50vh;
+		border:5px solid black;
+	    background-image: url('../img/01.jpg');
+	    background-size: 100% 100%;
+	    margin-bottom:25px;
+	    }
+.preview{
+		width:18%;
+		margin-left:15%;
+	    border: 3px solid black;
+}
+img{
+		width:95%;
+		border:5px solid black;
+}
+
+#one
+{
+padding-left: 12%;
+margin-top: 12%;
+}
+#images
+{
+background-image: url('../img/05.jpg')
+}
+

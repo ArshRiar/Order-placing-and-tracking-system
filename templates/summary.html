@@ -1,0 +1,68 @@
+{% extends 'base_1.html' %}
+{% block title %}
+Order Summary 
+{% endblock title %}
+{% block stylesheet %} 
+<link rel='stylesheet' href='../static/css/order.css'>
+{% endblock stylesheet %}
+{% block body %}
+<p>Your Order has been placed successfully. Below is your order summary. Please save it for future reference.</p>
+<h1> Order Summary </h1>
+			<a href='trackorder' id='track'>Track your order</a>
+<h3>Order Details:</h3>
+<table>
+				<tr>
+					<td>Order ID </td>
+					<td>{{ordd.order_id}}</td>
+				</tr>
+				<tr>
+					<td>Order Name </td>
+					<td>{{ordd.order_name}}</td>
+				</tr>
+				<tr>
+					<td>Material Selected</td>
+					<td>{{ordd.material | slice:"1:-1"}}
+					</td>
+				</tr>
+				<tr>
+					<td>Size</td>
+					<td>{{ordd.size}}  {{ordd.dem}}</td>
+				</tr>
+				<tr>
+					<td>Quantity</td>
+					<td>{{ordd.quantity}}</td>
+				</tr>
+				<tr>
+					<td>Specifications</td>
+					<td>{{ordd.specification}}</td>
+				</tr>
+				<tr>
+					<td>Do you have any design?</td>
+					<td>{{ordd.design}}</td>
+				</tr>
+				<tr>
+					<td>Type of Printing</td>
+					<td>{{ordd.type_of_print}}</td>
+				</tr>
+				<tr>
+					<td>Tapping</td>
+					<td>{{ordd.tapping}}</td>
+				</tr>
+			</table>
+			<h3>Your Details:</h3>
+<table>
+				<tr>
+					<td> Name </td>
+					<td>{{guest.name}}</td>
+				</tr>
+				<tr>
+					<td>Organization Name:</td>
+					<td>{{guest.name_of_organization}}</td>
+				</tr>
+				<tr>
+					<td>Organization Address</td>
+					<td>{{guest.organization_address}}</td>
+				</tr>
+			</table>
+
+{% endblock body %}

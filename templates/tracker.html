@@ -1,0 +1,45 @@
+{% extends 'base_1.html' %}
+{% block title %} Track Order {% endblock %}
+{% block stylesheet %}
+    <link rel='stylesheet' href='../static/css/tracker.css'>
+
+ {% endblock stylesheet %}
+{% block body %}
+<div class="container">
+    <div class="col my-4">
+        <h2> Enter Your Order ID to track your order </h2>
+
+           <form method="post" action="/trackorder" >
+           {% csrf_token %}
+           <div class="row">
+  			<div class="col">
+  			    <label for="id"> Order ID</label>
+    		<input type="text" class="form-control" placeholder="Order ID" name='orderid'>
+ 			 </div>
+		</div>
+            <button type="submit" class="btn btn-primary" >Track Order</button>
+           </form>
+            </div>
+    <div   id='status' >
+        <h3>Your Order Status :</h3>
+        <div class="my-4">
+         {% if updts %}
+            <table>
+            <tr><th>Current Status</th>
+					<th>Time</th></tr>
+             {% for updt in updts %}
+				<tr>
+					<td>{{updt.updtDesc}}</td>
+					<td>{{updt.date}}</td>
+				</tr>
+				{% endfor %}
+           </table>
+            {% else %}
+            <p class='empty'> Track Details Here </p>
+         {% endif %}
+        </div>
+    </div>
+    
+</div>
+{% endblock %}
+

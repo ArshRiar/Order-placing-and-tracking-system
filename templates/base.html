@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset = "UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Cherry Poly Pack | {% block title %} {%endblock%} </title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel='stylesheet' href='../static/css/base.css'>
+		 {% block stylesheet %}  {% endblock stylesheet %}
+	</head>
+	<body>
+		<nav class="nav navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand"  href="/"  id='name'>Cherry Poly Pack</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="products" id='products' class='products'  >Products</a></li>
+					<li><a href="login" class='login'  id='login'>LogIn</a></li>
+					<li><a href="register" id='register' class='register' >Register</a></li>
+				</ul>
+			</div>
+</div>
+		</nav>
+		{% if messages %}
+		{% for message in messages %}
+		<div class="alert alert-{{message.tags}} alert-dismissible" id='alert' role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>{{message}}</strong>
+</div>
+		{% endfor %}
+		{%endif%}
+
+		{% block body %}
+		{% endblock body %}
+
+		<!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                        <h4>Address</h4>
+                        <address>
+<p><b>Address:</b><br>#735/1, Dyeing Complex<br>Bahadur-ke-Road,<br>Ludhiana-141005</p>
+</address>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4> Navigate</h4>
+                        <ul>
+                            <li><a href="/" >Home</a></li>
+                            <li><a href="products" >Products</a></li>
+                             <li><a href="register ">Register</a></li>
+                            <li><a href="login">LogIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4> Contact Us</h4>
+                        <ul>
+                            <li>Jagjit Singh</li>
+                            <li>+91-9216536277</li>
+                          <li>Sanjeev Kataria</li>
+                            <li>+91-9216582277</li>
+                          <li><i class="far fa-envelope"></i> cherrypolypack@gmail.com</li>
+                            <li><i class="far fa-envelope"></i> cherrypolypack@yahoo.com</li>
+
+
+                          <li><i class="fas fa-map-marker-alt"></i> Ludhiana, Punjab</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+
+                </div>
+            </div>
+            </div>
+    </div>
+
+
+	</body>
+</html>
+

@@ -1,0 +1,65 @@
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+.footer-16371 {
+	padding: 1%;
+  font-family: "Poppins", sans-serif; 
+ background: #f7ebe2; }
+  .footer-16371 .footer-site-logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900; }
+    .footer-16371 .footer-site-logo a {
+      color: #a42828; }
+  .footer-16371 .nav-links {
+    padding: 0;
+    margin: 0; }
+    .footer-16371 .nav-links li {
+      display: inline-block; }
+      .footer-16371 .nav-links li a {
+        padding: 10px;
+        color: #000; }
+        .footer-16371 .nav-links li a:hover {
+          color: #a42828; }
+  .footer-16371 .social h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000; }
+  .footer-16371 .social ul li {
+    display: inline-block; 
+    padding-right: 10%;
+padding-bottom: 2%;}
+  .footer-16371 .copyright {
+    color: #999999; }
+nav
+{
+background: #a42828;
+padding: 2%;
+}
+#name
+{font-size: 163%;
+font-variant: small-caps;
+font-weight: 500;
+color:#fff;
+}
+#products, #page
+{
+font-size: 135%;
+font-weight: 500;
+}
+#dd
+{
+background: #621313;
+border-radius: 0;
+}
+#dd li a
+{
+color:#fff;
+}
+#dd li a:hover
+{
+color:#000;
+}
