@@ -130,4 +130,4 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'projectserver21@gmail.com'
 EMAIL_HOST_PASSWORD = 'Arsh#2110'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = BASE_DIR
